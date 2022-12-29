@@ -3,10 +3,10 @@ import React from 'react';
 const Video = props => {
     return (
         <div>
-        <video
+            <video
                 src={props.source.uri}
                 style={props.style}
-                loop={props.repeat}   
+                loop={props.repeat}
                 onError={props.onError}
                 onLoad={props.onLoad}
                 onLoadStart={props.onLoadStart}
