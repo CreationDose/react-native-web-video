@@ -1,29 +1,20 @@
 {
-    "name": "react-native-web-video",
-    "version": "0.0.0",
-    "description": "An aliased element for react-native-web",
-    "main": "Video.js",
-    "license": "MIT",
-    "author": "CreationDose",
-    "contributors": [],
-    "repository": {
-        "type": "git",
-        "url": "git@github.com:CreationDose/react-native-web-video.git"
-    },
-    "devDependencies": {
-        "babel-eslint": "5.0.0-beta8",
-        "eslint": "1.10.3",
-        "eslint-config-airbnb": "4.0.0",
-        "eslint-plugin-react": "3.16.1",
-        "react": "^16.7.0",
-        "react-dom": "^16.7.0",
-        "react-native": "^0.57.8"
-    },
-    "dependencies": {
-    },
-    "scripts": {
-        "test": "node_modules/.bin/eslint *.js"
-    },
-    "files": [
-    ]
+  "name": "react-native-web-video",
+  "version": "1.0.0",
+  "description": "Video component for react native project that is useful to render `<Video>` from [react-native-video](https://github.com/react-native-video/react-native-video) on web browser.",
+  "main": "Video.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CreationDose/react-native-web-video.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CreationDose/react-native-web-video/issues"
+  },
+  "homepage": "https://github.com/CreationDose/react-native-web-video#readme"
 }
