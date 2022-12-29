@@ -4,6 +4,9 @@ on:
     branches:
       - master
       - dev
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 jobs:
   release:
     runs-on: ubuntu-latest
