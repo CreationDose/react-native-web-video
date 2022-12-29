@@ -12,7 +12,8 @@ const Video = (props) => {
                 onLoadedData={props.onLoad}
                 onLoadStart={props.onLoadStart}
                 autoPlay={!props.paused}
-                muted />
+                muted 
+            />
         </div>
     );
 };
