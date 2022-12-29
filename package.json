@@ -1,0 +1,42 @@
+{
+    "name": "react-native-web-video",
+    "version": "5.0.0",
+    "description": "An aliased element for react-native-web",
+    "main": "Video.js",
+    "license": "MIT",
+    "author": "Brent Vatne <brentvatne@gmail.com> (https://github.com/brentvatne)",
+    "contributors": [],
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:react-native-community/react-native-video.git"
+    },
+    "devDependencies": {
+        "babel-eslint": "5.0.0-beta8",
+        "eslint": "1.10.3",
+        "eslint-config-airbnb": "4.0.0",
+        "eslint-plugin-react": "3.16.1",
+        "react": "^16.7.0",
+        "react-dom": "^16.7.0",
+        "react-hot-loader": "^4.6.3",
+        "react-native": "^0.57.8"
+    },
+    "dependencies": {
+        "keymirror": "^0.1.1",
+        "prop-types": "^15.5.10",
+        "shaka-player": "^2.4.4"
+    },
+    "scripts": {
+        "test": "node_modules/.bin/eslint *.js"
+    },
+    "files": [
+        "android-exoplayer",
+        "android",
+        "dom",
+        "ios",
+        "windows",
+        "FilterType.js",
+        "TextTrackType.js",
+        "VideoResizeMode.js",
+        "react-native-video.podspec"
+    ]
+}
