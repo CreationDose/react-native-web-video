@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/CreationDose/react-native-web-video#readme",
   "devDependencies": {
-    "eslint-config-recommended": "^4.1.0"
+    "eslint": "^8.30.0",
+    "eslint-plugin-react": "^7.31.11"
   }
 }
