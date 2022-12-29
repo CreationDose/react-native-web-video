@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/CreationDose/react-native-web-video/issues"
   },
-  "homepage": "https://github.com/CreationDose/react-native-web-video#readme"
+  "homepage": "https://github.com/CreationDose/react-native-web-video#readme",
+  "devDependencies": {
+    "eslint-config-recommended": "^4.1.0"
+  }
 }
