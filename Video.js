@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Video = props => {
+const Video = (props) => {
     return (
         <div>
             <video
@@ -8,13 +8,12 @@ const Video = props => {
                 style={props.style}
                 loop={props.repeat}
                 onError={props.onError}
-                onLoad={props.onLoad}
+                onLoadedData={props.onLoad}
                 onLoadStart={props.onLoadStart}
                 autoPlay={!props.paused}
-                muted
-            />
+                muted />
         </div>
-    )
-}
+    );
+};
 
 export default Video;
