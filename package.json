@@ -2,7 +2,7 @@
   "name": "react-native-web-video",
   "version": "1.0.0",
   "description": "Video component for react native project that is useful to render `<Video>` from [react-native-video](https://github.com/react-native-video/react-native-video) on web browser.",
-  "main": "Video.js",
+  "main": "./src",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
