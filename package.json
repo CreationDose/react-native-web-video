@@ -1,25 +1,29 @@
 {
-  "name": "react-native-web-video",
-  "version": "1.0.0",
+  "name": "@creationdose/react-native-web-video",
+  "version": "0.0.0-development",
   "description": "Video component for react native project that is useful to render `<Video>` from [react-native-video](https://github.com/react-native-video/react-native-video) on web browser.",
   "main": "Video.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CreationDose/react-native-web-video.git"
+    "url": "https://github.com/CreationDose/react-native-web-video.git"
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/CreationDose/react-native-web-video/issues"
   },
   "homepage": "https://github.com/CreationDose/react-native-web-video#readme",
   "devDependencies": {
+    "@semantic-release/changelog": "^6.0.2",
+    "@semantic-release/commit-analyzer": "^9.0.2",
+    "@semantic-release/github": "^8.0.7",
+    "@semantic-release/npm": "^9.0.1",
+    "@semantic-release/release-notes-generator": "^10.0.3",
     "eslint": "^8.30.0",
-    "eslint-plugin-react": "^7.31.11"
+    "eslint-plugin-react": "^7.31.11",
+    "semantic-release": "^19.0.5"
   },
   "dependencies": {
     "react": "^18.2.0",
