@@ -13,5 +13,6 @@ export const Story = Template.bind({});
 Story.args = {
   source: {
     uri: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ForBiggerBlazes.mp4"
-  }
+  },
+  muted: false
 };
