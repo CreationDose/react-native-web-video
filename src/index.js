@@ -1,21 +1,29 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Video = (props) => {
+const Video = (
+    source,
+    repeat,
+    style,
+    resizeMode,
+    onError,
+    onLoad,
+    onLoadStart,
+    paused,
+) => {
     return (
         <div>
             <video
-                src={props.source.uri}
+                src={source.uri}
                 style={{
-                    ...props.style,
-                    objectFit: props.resizeMode === 'cover' ? 'cover' : 'contain'
+                    ...style,
+                    objectFit: resizeMode === 'cover' ? 'cover' : 'contain'
                 }}
-                loop={props.repeat}
-                onError={props.onError}
-                onLoadedData={props.onLoad}
-                onLoadStart={props.onLoadStart}
-                autoPlay={!props.paused}
+                loop={repeat}
+                onError={onError}
+                onLoadedData={onLoad}
+                onLoadStart={onLoadStart}
+                autoPlay={!paused}
                 muted
             />
         </div>
@@ -23,14 +31,16 @@ const Video = (props) => {
 };
 
 Video.PropTypes = {
-    src: PropTypes.string.isRequired,
+    source: PropTypes.shape({
+        uri: PropTypes.string.isRequired
+        }),
     style: PropTypes.object,
-    loop: PropTypes.bool,
+    resizeMode: PropTypes.string,
+    repeat: PropTypes.bool,
     onError: PropTypes.func,
-    onLoadedData: PropTypes.func,
+    onLoad: PropTypes.func,
     onLoadStart: PropTypes.func,
-    autoPlay: PropTypes.bool,
-    muted: PropTypes.bool
+    paused: PropTypes.bool,
 }
 
 export default Video;
