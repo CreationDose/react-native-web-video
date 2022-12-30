@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Video = (
+const Video = ({
     source,
     repeat,
     style,
@@ -9,8 +9,8 @@ const Video = (
     onError,
     onLoad,
     onLoadStart,
-    paused,
-) => {
+    paused
+}) => {
     return (
         <div>
             <video
@@ -30,12 +30,12 @@ const Video = (
     );
 };
 
-Video.PropTypes = {
+Video.propTypes = {
     source: PropTypes.shape({
         uri: PropTypes.string.isRequired
-        }),
+    }),
     style: PropTypes.object,
-    resizeMode: PropTypes.string,
+    resizeMode: PropTypes.oneOf(['cover', 'contain']),
     repeat: PropTypes.bool,
     onError: PropTypes.func,
     onLoad: PropTypes.func,
