@@ -1,10 +1,10 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
+import { View } from 'react-native';
 
 const Video = (props) => {
-
     return (
-        <div>
+        <View>
              <video
                 src={props.source.uri}
                 style={{
@@ -18,7 +18,7 @@ const Video = (props) => {
                 autoPlay={!props.paused}
                 muted
             />
-        </div>
+        </View>
     );
 };
 
