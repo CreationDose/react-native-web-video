@@ -3,10 +3,6 @@ import React from 'react';
 import { View } from 'react-native';
 
 const Video = (props) => {
-    const handleMuted = () => {
-        if (props.muted === false) alert('On browser a video cannot be played in unmuted mode, to played set muted prop on true');
-        return props.muted
-    }
     return (
         <View>
             <video
@@ -20,7 +16,7 @@ const Video = (props) => {
                 onLoadedData={props.onLoad}
                 onLoadStart={props.onLoadStart}
                 autoPlay={!props.paused}
-                muted={handleMuted()}
+                muted={props.muted}
             />
         </View>
     );
