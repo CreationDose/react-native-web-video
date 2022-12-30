@@ -2,7 +2,7 @@
   "name": "@creationdose/react-native-web-video",
   "version": "0.0.0-development",
   "description": "Video component for react native project that is useful to render `<Video>` from [react-native-video](https://github.com/react-native-video/react-native-video) on web browser.",
-  "main": "Video.js",
+  "main": "./src",
   "scripts": {
     "semantic-release": "semantic-release"
   },
