@@ -24,16 +24,16 @@ After that alias the package in the main.js config file from the .storybook fold
  
 
     addons: [
-    ....
-    { 
-	    name:  '@storybook/addon-react-native-web',
-	    options: {	
-		    modulesToAlias: {
-			    'react-native-video':  '@creationdose/react-native-web-video',
-			},
-		},
-	},
-	...]
+        ...
+        { 
+            name:  '@storybook/addon-react-native-web',
+            options: {	
+                modulesToAlias: {
+                    'react-native-video':  '@creationdose/react-native-web-video',
+                },
+            },
+        },
+	]
 
 ## Contributing
 PRs are welcome!
