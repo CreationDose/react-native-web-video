@@ -19,7 +19,7 @@ Alias the package in your webpack config:
 ### Use Case
 This library has actually been integrated and tested in a project that use [Storybook for React Native](https://github.com/storybookjs/react-native).
 If your use case it's the same, for integrate it in you storybook project you have to add the [storybook/addon-react-native-web](https://storybook.js.org/addons/@storybook/addon-react-native-web#adding-babel-plugins) .
-After that alias the package in the main.js config file from the .storybook folder. Add in addons key this:
+After that you need to alias and traspile the package in the main.js config file from the .storybook folder. Add in addons key this:
 
  
 
@@ -27,7 +27,8 @@ After that alias the package in the main.js config file from the .storybook fold
         ...
         { 
             name:  '@storybook/addon-react-native-web',
-            options: {	
+            options: {
+                modulesToTranspile: ['@creationdose/react-native-web-video'],
                 modulesToAlias: {
                     'react-native-video':  '@creationdose/react-native-web-video',
                 },
