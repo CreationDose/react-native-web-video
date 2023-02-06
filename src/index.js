@@ -1,25 +1,46 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
-import { View } from 'react-native';
+import PropTypes from 'prop-types';
 
-const Video = (props) => {
+const Video = ({
+    source,
+    repeat,
+    style,
+    resizeMode,
+    onError,
+    onLoad,
+    onLoadStart,
+    paused
+}) => {
     return (
-        <View>
+        <div>
             <video
-                src={props.source.uri}
+                src={source.uri}
                 style={{
-                    ...props.style,
-                    objectFit: props.resizeMode === 'cover' ? 'cover' : 'contain'
+                    ...style,
+                    objectFit: resizeMode === 'cover' ? 'cover' : 'contain'
                 }}
-                loop={props.repeat}
-                onError={props.onError}
-                onLoadedData={props.onLoad}
-                onLoadStart={props.onLoadStart}
-                autoPlay={!props.paused}
-                muted={props.muted}
+                loop={repeat}
+                onError={onError}
+                onLoadedData={onLoad}
+                onLoadStart={onLoadStart}
+                autoPlay={!paused}
+                muted
             />
-        </View>
+        </div>
     );
 };
+
+Video.propTypes = {
+    source: PropTypes.shape({
+        uri: PropTypes.string.isRequired
+    }),
+    style: PropTypes.object,
+    resizeMode: PropTypes.oneOf(['cover', 'contain']),
+    repeat: PropTypes.bool,
+    onError: PropTypes.func,
+    onLoad: PropTypes.func,
+    onLoadStart: PropTypes.func,
+    paused: PropTypes.bool,
+}
 
 export default Video;
