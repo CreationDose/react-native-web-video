@@ -16,6 +16,7 @@ const Video = ({
             <video
                 src={source.uri}
                 style={{
+                    width: '100%',
                     ...style,
                     objectFit: resizeMode === 'cover' ? 'cover' : 'contain'
                 }}
@@ -29,6 +30,10 @@ const Video = ({
         </div>
     );
 };
+
+Video.defaultProps = {
+    repeat: true
+}
 
 Video.propTypes = {
     source: PropTypes.shape({

@@ -4,7 +4,9 @@
   "description": "Video component for react native project that is useful to render `<Video>` from [react-native-video](https://github.com/react-native-video/react-native-video) on web browser.",
   "main": "./src",
   "scripts": {
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "repository": {
     "type": "git",
@@ -16,18 +18,34 @@
   },
   "homepage": "https://github.com/CreationDose/react-native-web-video#readme",
   "devDependencies": {
+    "@babel/core": "^7.20.7",
     "@semantic-release/changelog": "^6.0.2",
     "@semantic-release/commit-analyzer": "^9.0.2",
     "@semantic-release/github": "^8.0.7",
     "@semantic-release/npm": "^9.0.1",
     "@semantic-release/release-notes-generator": "^10.0.3",
+    "@storybook/addon-actions": "^6.5.15",
+    "@storybook/addon-essentials": "^6.5.15",
+    "@storybook/addon-interactions": "^6.5.15",
+    "@storybook/addon-links": "^6.5.15",
+    "@storybook/addon-react-native-web": "^0.0.19",
+    "@storybook/builder-webpack4": "^6.5.15",
+    "@storybook/manager-webpack4": "^6.5.15",
+    "@storybook/react": "^6.5.15",
+    "@storybook/testing-library": "^0.0.13",
+    "babel-loader": "^8.3.0",
     "eslint": "^8.30.0",
     "eslint-plugin-react": "^7.31.11",
-    "semantic-release": "^19.0.5"
-  },
-  "dependencies": {
+    "eslint-plugin-storybook": "^0.6.8",
+    "semantic-release": "^19.0.5",
+    "babel-plugin-react-native-web": "^0.18.10",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "react-dom": "^18.2.0",
+    "react-native": "^0.70.6",
+    "react-native-web": "^0.18.10"
+  },
+  "peerDependencies": {
+    "react-native-web": "*"
   }
 }
