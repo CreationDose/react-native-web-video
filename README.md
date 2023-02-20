@@ -36,6 +36,12 @@ After that you need to alias and traspile the package in the main.js config file
         },
 	]
 
+## Roadmap
+ - [x] Initialization react-native-video component on react-native-web with main props
+ - [ ] Enhanced docs template from [react-native-web-community](https://github.com/react-native-web-community/example-new-library)
+ - [ ] Map other props of [react-native-video](https://github.com/react-native-video/react-native-video)
+
+
 ## Contributing
 PRs are welcome!
 
