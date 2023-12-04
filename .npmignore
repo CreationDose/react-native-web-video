@@ -3,6 +3,12 @@ npm-debug.log
 package-lock.json
 
 .github/
-*.stories.*
+.gitignore
 
+*.stories.*
 .storybook
+
+.eslintrc.js
+.nvmrc
+.npmrc
+
